@@ -18,10 +18,11 @@ ODD = "odd" #нечетный
 EVEN = "even"  # четный
 PRIME = "prime" # простое число
 
+
 def filter_numbers(args,check):
-    if check == "even":
+    if check == EVEN:
         return list(filter(lambda x: x % 2 == 0, args))
-    if check == "odd":
+    if check == ODD:
         return list(filter(lambda x: x % 2 != 0, args))
-    if check == "prime":
+    if check == PRIME:
         return list(filter(is_prime, args))
